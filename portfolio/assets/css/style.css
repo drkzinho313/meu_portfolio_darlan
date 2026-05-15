@@ -178,6 +178,40 @@ section{
     margin-top: 10px;
 }
 
+.education-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:50px;
+}
+
+.education-card{
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:25px;
+    backdrop-filter:blur(10px);
+    transition:.3s;
+}
+
+.education-card:hover{
+    transform:translateY(-5px);
+    border-color:#ffffff20;
+}
+
+.education-card h3{
+    color:#fff;
+    margin-bottom:10px;
+}
+
+.education-card p{
+    color:#aaa;
+}
+
+.education-card span{
+    color:#666;
+    font-size:14px;
+}
 
 .about-grid,
 .skills-grid{

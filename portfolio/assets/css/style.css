@@ -1,4 +1,4 @@
-/* RESET */
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +9,6 @@ html{
     scroll-behavior: smooth;
 }
 
-/* BODY */
 body{
     background: #050505;
     overflow-x: hidden;
@@ -17,7 +16,7 @@ body{
     color: white;
 }
 
-/* CANVAS */
+
 #web{
     position: fixed;
     top: 0;
@@ -27,20 +26,20 @@ body{
     z-index: -1;
 }
 
-/* CONTENT */
+
 .content{
     position: relative;
     z-index: 10;
 }
 
-/* CONTAINER */
+
 .container{
     width: 90%;
     max-width: 1200px;
     margin: auto;
 }
 
-/* HEADER */
+
 header{
     position: fixed;
     top: 0;
@@ -83,7 +82,7 @@ nav ul li a:hover{
     color: #8b8b8b;
 }
 
-/* HERO */
+
 .hero{
     min-height: 100vh;
     display: flex;
@@ -143,7 +142,7 @@ nav ul li a:hover{
     transform: translateY(-5px);
 }
 
-/* HERO CARD */
+
 .hero-card{
     background: rgba(20,20,20,0.6);
     backdrop-filter: blur(10px);
@@ -161,7 +160,7 @@ nav ul li a:hover{
     margin-bottom: 25px;
 }
 
-/* SECTIONS */
+
 section{
     padding: 120px 0;
 }
@@ -179,7 +178,7 @@ section{
     margin-top: 10px;
 }
 
-/* GRID */
+
 .about-grid,
 .skills-grid{
     display: grid;
@@ -187,7 +186,7 @@ section{
     gap: 30px;
 }
 
-/* CARDS */
+
 .about-card,
 .skill-box{
     background: rgba(20,20,20,0.5);
@@ -208,7 +207,7 @@ section{
     margin-bottom: 20px;
 }
 
-/* CONTACT */
+
 .contact{
     text-align: center;
 }
@@ -244,7 +243,7 @@ section{
     color: black;
 }
 
-/* RESPONSIVO */
+
 @media(max-width:768px){
 
     nav{

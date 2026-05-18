@@ -72,4 +72,8 @@ assets/
 ├── img/
 │   └── perfil.png
 │
+<<<<<<< HEAD
 index.html
+=======
+index.html
+>>>>>>> 8a4af9279dc502616a6dd77becd1e2f1299aaee9

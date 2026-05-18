@@ -1,4 +1,4 @@
-# DArlan Silva — Portfólio — D'ark Designer 
+# Darlan Silva — Portfólio — D'ark Designer 
 
 Portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e experiências como desenvolvedor e designer.
 

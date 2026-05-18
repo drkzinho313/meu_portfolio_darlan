@@ -13,7 +13,7 @@ O objetivo é demonstrar minhas habilidades em desenvolvimento web, design e cri
 ## Tecnologias Utilizadas
 
 - HTML5
-- CSS3
+- CSS
 - JavaScript
 - GSAP Animation
 - SVG Animations
@@ -26,7 +26,6 @@ O objetivo é demonstrar minhas habilidades em desenvolvimento web, design e cri
 
 - Layout moderno e responsivo
 - Fundo animado com efeito de teia
-- Mini game interativo
 - Seção de projetos
 - Área de skills
 - Contato e redes sociais
@@ -72,8 +71,5 @@ assets/
 ├── img/
 │   └── perfil.png
 │
-<<<<<<< HEAD
 index.html
-=======
 index.html
->>>>>>> 8a4af9279dc502616a6dd77becd1e2f1299aaee9

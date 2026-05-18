@@ -10,6 +10,11 @@ O objetivo é demonstrar minhas habilidades em desenvolvimento web, design e cri
 
 ---
 
+## Site Publicado
+Acesse o projeto online:
+
+ https://darlan-port.netlify.app
+
 ## Tecnologias Utilizadas
 
 - HTML5

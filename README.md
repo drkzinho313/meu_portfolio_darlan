@@ -77,4 +77,3 @@ assets/
 │   └── perfil.png
 │
 index.html
-index.html

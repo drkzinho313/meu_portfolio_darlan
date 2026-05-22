@@ -2,7 +2,7 @@
 
 const GITHUB_USERNAME = 'drkzinho313';
 
-
+// Mapeamento de linguagens para ícones Font Awesome
 const LANG_ICONS = {
   'HTML':       'fa-brands fa-html5',
   'CSS':        'fa-brands fa-css3-alt',
@@ -46,8 +46,9 @@ function renderProjects(repos) {
     const forks    = repo.forks_count;
     const desc     = repo.description || 'Sem descrição.';
 
-   
-    const statusTag = repo.archived
+    
+    const isConcluido = repo.archived || (repo.topics && repo.topics.includes('concluido'));
+    const statusTag = isConcluido
       ? `<span class="project-status concluido"><i class="fa-solid fa-circle-check"></i> Concluído</span>`
       : `<span class="project-status andamento"><i class="fa-solid fa-circle-half-stroke"></i> Em andamento</span>`;
 
@@ -86,7 +87,7 @@ function renderProjects(repos) {
 
     list.appendChild(item);
 
-   
+    
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         item.style.opacity = '1';
@@ -96,7 +97,7 @@ function renderProjects(repos) {
   });
 }
 
-
+// Mostra loader enquanto carrega
 function showLoader() {
   const list = document.querySelector('.projects-list');
   if (!list) return;
@@ -113,7 +114,7 @@ async function loadGitHubProjects() {
   try {
     const res = await fetch(
       `https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=10`,
-      { headers: { Accept: 'application/vnd.github+json' } }
+      { headers: { Accept: 'application/vnd.github.mercy-preview+json' } }
     );
 
     if (!res.ok) throw new Error(`GitHub API: ${res.status}`);
@@ -140,6 +141,7 @@ async function loadGitHubProjects() {
     console.error('Erro ao carregar projetos do GitHub:', err);
   }
 }
+
 
 
 document.addEventListener('DOMContentLoaded', () => {

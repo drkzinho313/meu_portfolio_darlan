@@ -25,7 +25,7 @@ function formatDate(dateStr) {
   return d.toLocaleDateString('pt-BR', { month: 'short', year: 'numeric' });
 }
 
-// Renderiza os cards de projeto
+
 function renderProjects(repos) {
   const list = document.querySelector('.projects-list');
   if (!list) return;
@@ -46,6 +46,11 @@ function renderProjects(repos) {
     const forks    = repo.forks_count;
     const desc     = repo.description || 'Sem descrição.';
 
+   
+    const statusTag = repo.archived
+      ? `<span class="project-status concluido"><i class="fa-solid fa-circle-check"></i> Concluído</span>`
+      : `<span class="project-status andamento"><i class="fa-solid fa-circle-half-stroke"></i> Em andamento</span>`;
+
     const item = document.createElement('div');
     item.className = 'project-item';
     item.style.setProperty('--delay', `${i * 80}ms`);
@@ -53,9 +58,12 @@ function renderProjects(repos) {
     item.innerHTML = `
       <div class="project-header">
         <h3>${repo.name.replace(/-/g, ' ')}</h3>
-        <span>
-          <i class="${icon}" style="margin-right:5px"></i>${lang}
-        </span>
+        <div class="project-header-right">
+          ${statusTag}
+          <span>
+            <i class="${icon}" style="margin-right:5px"></i>${lang}
+          </span>
+        </div>
       </div>
 
       <p>${desc}</p>
@@ -71,14 +79,14 @@ function renderProjects(repos) {
       </div>
     `;
 
-   
+    
     item.style.opacity = '0';
     item.style.transform = 'translateY(20px)';
     item.style.transition = `opacity .4s ease ${i * 80}ms, transform .4s ease ${i * 80}ms`;
 
     list.appendChild(item);
 
-    
+   
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         item.style.opacity = '1';

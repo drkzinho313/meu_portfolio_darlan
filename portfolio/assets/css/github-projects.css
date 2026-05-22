@@ -1,6 +1,38 @@
 /* ─── Projetos via GitHub API ──────────────────────────────────────────────── */
 
-/* Meta-info abaixo da descrição */
+
+.project-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+
+.project-status {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.project-status.concluido {
+  background: rgba(39, 174, 96, 0.12);
+  color: #2ecc71;
+  border: 1px solid rgba(39, 174, 96, 0.25);
+}
+
+.project-status.andamento {
+  background: rgba(230, 126, 34, 0.1);
+  color: #e67e22;
+  border: 1px solid rgba(230, 126, 34, 0.2);
+}
+
+
 .project-meta {
   display: flex;
   align-items: center;

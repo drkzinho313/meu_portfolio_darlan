@@ -18,19 +18,19 @@ function getLangIcon(lang) {
   return LANG_ICONS[lang] || LANG_ICONS['default'];
 }
 
-
+// Formata data "YYYY-MM-DDT..." → "Jan 2025"
 function formatDate(dateStr) {
   if (!dateStr) return '';
   const d = new Date(dateStr);
   return d.toLocaleDateString('pt-BR', { month: 'short', year: 'numeric' });
 }
 
-
+// Renderiza os cards de projeto
 function renderProjects(repos) {
   const list = document.querySelector('.projects-list');
   if (!list) return;
 
-  
+  // Remove loader
   list.innerHTML = '';
 
   if (!repos.length) {
@@ -46,7 +46,7 @@ function renderProjects(repos) {
     const forks    = repo.forks_count;
     const desc     = repo.description || 'Sem descrição.';
 
-    
+    // Tag de status: topic "concluido" ou arquivado = Concluído, senão = Em andamento
     const isConcluido = repo.archived || (repo.topics && repo.topics.includes('concluido'));
     const statusTag = isConcluido
       ? `<span class="project-status concluido"><i class="fa-solid fa-circle-check"></i> Concluído</span>`
@@ -80,14 +80,14 @@ function renderProjects(repos) {
       </div>
     `;
 
-    
+    // Animação de entrada escalonada
     item.style.opacity = '0';
     item.style.transform = 'translateY(20px)';
     item.style.transition = `opacity .4s ease ${i * 80}ms, transform .4s ease ${i * 80}ms`;
 
     list.appendChild(item);
 
-    
+    // Trigger reflow para a animação funcionar
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         item.style.opacity = '1';
@@ -108,7 +108,7 @@ function showLoader() {
   `;
 }
 
-
+// Busca repos e ordena por data de atualização
 async function loadGitHubProjects() {
   showLoader();
   try {
@@ -121,10 +121,7 @@ async function loadGitHubProjects() {
 
     const repos = await res.json();
 
-    
-    const filtered = repos.filter(r => !r.fork);
-
-    renderProjects(filtered);
+    renderProjects(repos);
   } catch (err) {
     const list = document.querySelector('.projects-list');
     if (list) {
@@ -142,7 +139,7 @@ async function loadGitHubProjects() {
   }
 }
 
-
+// ─── Init ─────────────────────────────────────────────────────────────────────
 
 document.addEventListener('DOMContentLoaded', () => {
   loadGitHubProjects();

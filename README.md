@@ -2,7 +2,7 @@
 
 # Darlan Silva — Portfólio — D'ark Designer
 
-**Portfólio pessoal de Darlan Silva — desenvolvedor e designer focado em interfaces modernas, identidade visual e soluções web.**
+**Portfólio pessoal de Darlan Silva: Desenvolvedor e designer.**
 
 [![Deploy](https://img.shields.io/badge/Deploy-Netlify-00C7B7?style=flat-square&logo=netlify)](https://darlan-port.netlify.app)
 [![GitHub](https://img.shields.io/badge/GitHub-drkzinho313-181717?style=flat-square&logo=github)](https://github.com/drkzinho313)
@@ -31,7 +31,7 @@
 
 Este portfólio foi criado para apresentar projetos, habilidades e experiências como desenvolvedor e designer. O objetivo é unir criatividade e tecnologia em uma experiência visual moderna, minimalista e interativa.
 
-A seção de projetos é **integrada à API pública do GitHub**, ou seja, qualquer repositório novo publicado aparece automaticamente no site — sem necessidade de editar o código.
+A seção de projetos é **integrada à API pública do GitHub**, ou seja, qualquer repositório novo publicado aparece automaticamente no site sem necessidade de editar o código.
 
 ---
 

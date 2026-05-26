@@ -12,7 +12,7 @@
 
 ---
 
-## 📋 Índice
+##  Índice
 
 - [Sobre](#-sobre)
 - [Preview](#-preview)
@@ -27,7 +27,7 @@
 
 ---
 
-## 💡 Sobre
+##  Sobre
 
 Este portfólio foi criado para apresentar projetos, habilidades e experiências como desenvolvedor e designer. O objetivo é unir criatividade e tecnologia em uma experiência visual moderna, minimalista e interativa.
 
@@ -35,13 +35,13 @@ A seção de projetos é **integrada à API pública do GitHub**, ou seja, qualq
 
 ---
 
-## 🖥️ Preview
+##  Preview
 
 > Acesse o projeto online: **[darlan-port.netlify.app](https://darlan-port.netlify.app)**
 
 ---
 
-## 🛠️ Tecnologias
+##  Tecnologias
 
 | Tecnologia | Uso |
 |---|---|
@@ -55,7 +55,7 @@ A seção de projetos é **integrada à API pública do GitHub**, ou seja, qualq
 
 ---
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
 - ✅ Layout moderno, dark e responsivo
 - ✅ Fundo animado com efeito de teia de aranha (Canvas)
@@ -68,7 +68,7 @@ A seção de projetos é **integrada à API pública do GitHub**, ou seja, qualq
 
 ---
 
-## 📁 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 portfolio/
@@ -90,7 +90,7 @@ portfolio/
 
 ---
 
-## 🚀 Como usar
+##  Como usar
 
 ### 1. Clone o repositório
 
@@ -118,7 +118,7 @@ Ou use a extensão **Live Server** no VS Code para recarregamento automático.
 
 ---
 
-## 🐙 Integração com API do GitHub
+##  Integração com API do GitHub
 
 A seção **Projetos** busca automaticamente seus repositórios públicos pela [API REST do GitHub](https://docs.github.com/en/rest/repos/repos).
 
@@ -151,8 +151,8 @@ Cada projeto exibe uma tag de status automaticamente:
 
 | Tag | Cor | Como ativar |
 |---|---|---|
-| ✅ Concluído | Verde | Adicione o topic `concluido` no repositório |
-| 🔶 Em andamento | Laranja | Padrão para todos os outros repos |
+|  Concluído | Verde | Adicione o topic `concluido` no repositório |
+|  Em andamento | Laranja | Padrão para todos os outros repos |
 
 #### Como adicionar o topic no GitHub
 
@@ -176,7 +176,7 @@ const filtered = repos.filter(r => !r.fork); // ← apague esta linha
 
 ---
 
-## 🎨 Personalização
+##  Personalização
 
 ### Trocar a foto de perfil
 
@@ -213,7 +213,7 @@ color: #e67e22;
 
 ---
 
-## 🌐 Deploy
+##  Deploy
 
 O projeto está hospedado no **Netlify**. Para fazer o seu próprio deploy:
 
@@ -236,15 +236,15 @@ O site ficará disponível em `https://SEU_USERNAME.github.io/NOME_DO_REPO`
 
 ---
 
-## 📬 Contato
+##  Contato
 
 | Canal | Link |
 |---|---|
-| ✉️ E-mail pessoal | darlan.silva.dbz@gmail.com |
-| ✉️ E-mail design | dark.socialmid@gmail.com |
-| 📸 Instagram | [@dark_designer19](https://www.instagram.com/dark_designer19) |
-| 💼 LinkedIn | [darlan-silva-313](https://www.linkedin.com/in/darlan-silva-darlan) |
-| 🐙 GitHub | [drkzinho313](https://github.com/drkzinho313) |
+|  E-mail pessoal | darlan.silva.dbz@gmail.com |
+|  E-mail design | dark.socialmid@gmail.com |
+|  Instagram | [@dark_designer19](https://www.instagram.com/dark_designer19) |
+|  LinkedIn | [darlan-silva-313](https://www.linkedin.com/in/darlan-silva-darlan) |
+|  GitHub | [drkzinho313](https://github.com/drkzinho313) |
 
 ---
 
